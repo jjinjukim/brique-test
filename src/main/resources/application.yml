@@ -1,0 +1,28 @@
+spring:
+    application:
+        name: brique-test
+    http:
+        encoding:
+            enabled: true
+            force: true
+            charset: UTF-8
+    mvc:
+        view:
+            prefix: /WEB-INF/jsp/
+            suffix: .jsp
+    # jdbc
+    datasource:
+        driverClassName: org.mariadb.jdbc.Driver
+        url: jdbc:mariadb://codingtest.brique.kr:3306/employees?characterEncoding=utf8&serverTimezone=UTC
+        username: codingtest
+        password: 12brique!@
+
+server:
+    servlet:
+        context-path: /
+    port: 8082
+
+mybatis:
+    mapper-locations: mapper/**/*.xml
+    configuration:
+        map-underscore-to-camel-case: true
