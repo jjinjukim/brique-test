@@ -1,12 +1,5 @@
 package brique.brique_test.assignment1;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
@@ -27,22 +20,11 @@ public class Assignment1Main {
         // CSV 파일 읽기
         CsvReader reader = new CsvReader();
 
-        /*
-        List<String> lines = reader.readCsv(filePath);
-
-        // CSV 계산 및 결과 출력
-        CsvCalculator calculator = new CsvCalculator();
-        calculator.processLines(lines);
-        */
-
         // try-with-resources를 사용하여 스트림을 안전하게 닫습니다.
         try (Stream<String> linesStream = reader.readCsvStream(filePath)) {
-            // 스트림을 List로 변환하여 처리합니다.
-//            List<String> lines = linesStream.collect(Collectors.toList());
 
             // 이후 CsvCalculator 등에서 List<String> 기반으로 처리할 수 있습니다.
             CsvCalculator calculator = new CsvCalculator();
-//            calculator.processLines(lines);
             calculator.processLines(linesStream);
         }
     }

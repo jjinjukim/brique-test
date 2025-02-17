@@ -16,62 +16,6 @@ import java.util.stream.Stream;
  */
 public class CsvCalculator {
     /**
-     * CSV 파일의 각 라인을 처리합니다.
-     * 숫자로 구성된 라인은 계산을 수행하여 결과를 출력하고,
-     * 숫자가 아닌 값이 하나라도 포함된 라인은 errorLines에 추가합니다.
-     *
-     * @param lines CSV 파일에서 읽어온 각 라인 목록
-     */
-    public void processLines(List<String> lines) {
-        int totalLines = 0;
-        int calculatedLines = 0;
-        List<String> errorLines = new ArrayList<>();
-
-        for (String line : lines) {
-            totalLines++;
-            String[] tokens = line.split(","); // 쉼표 구분
-            boolean allNumeric = true;
-            double[] nums = new double[tokens.length];
-            List<String> nonNumericTokens = new ArrayList<>();
-
-            // 각 토큰이 숫자인지 체크
-            for (int i = 0; i < tokens.length; i++) {
-                String token = tokens[i].trim();
-                try {
-                    nums[i] = Double.parseDouble(token);
-                } catch (NumberFormatException e) {
-                    allNumeric = false;
-                    nonNumericTokens.add(token);
-                    break;
-                }
-            }
-
-            if (allNumeric) {
-                calculatedLines++;
-                double min = Arrays.stream(nums).min().getAsDouble();
-                double max = Arrays.stream(nums).max().getAsDouble();
-                double sum = Arrays.stream(nums).sum();
-                double average = sum / nums.length;
-                double stdDev = calculateStdDev(nums, average);
-                double median = calculateMedian(nums);
-
-                // 계산 결과를 출력 (형식: 최소값 최대값 합계 평균 표준편차 중간값)
-                System.out.printf("%.1f %.1f %.1f %.1f %.14f %.1f%n",
-                        min, max, sum, average, stdDev, median);
-            } else {
-                errorLines.add(line);
-            }
-        }
-
-        // 최종 결과 출력
-        System.out.println("---------------------------------------------");
-        System.out.println("The total number of lines: " + totalLines);
-        System.out.println("The calculated lines: " + calculatedLines);
-        System.out.println("Error lines (non-numeric values):");
-        errorLines.forEach(System.out::println);
-    }
-
-    /**
      * CSV 파일의 각 라인을 받아 처리합니다.
      * 숫자로 구성된 행은 계산을 수행하여 결과를 출력하고,
      * 숫자가 아닌 값이 하나라도 포함된 행은 계산하지 않고, 해당 행에서 숫자가 아닌 값만 추출하여
