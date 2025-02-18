@@ -11,7 +11,7 @@ import java.util.stream.Stream;
  * @author j
  * @version 1.0
  */
-public class Assignment1Main {
+public class Assignment1 {
     public static void main(String[] args) {
         // CSV 파일 경로 지정 (프로젝트 루트 기준 상대경로)
         // 클래스패스 기준 경로로 지정 (src/main/resources/csv/sample.csv)
