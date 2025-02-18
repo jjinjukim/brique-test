@@ -26,7 +26,7 @@ csv 파일을 읽어서 오류가 있는 항목들을 걸러내고, 필요한 �
     - 중간값
 
 - **`Assignment1 테스트 방법`**
-  - `Assignment1Main.main()` run 실행
+  - src/main/java/brique/brique_test/assignment1/Assignment1Main.java `Assignment1Main.main()` run 실행
 - **`Assignment1 실행 결과`**
   ``` ...
   3.0 84.0 334.0 33.4 27.35031992500270 22.5
@@ -161,5 +161,33 @@ csv 파일을 읽어서 오류가 있는 항목들을 걸러내고, 필요한 �
   - 가장 많은 횟수가 나온 값부터 출력한다
 
 - **`Assignment5 테스트 방법`**
+-   - src/main/java/brique/brique_test/assignment5/Assignment5.java 경로의 `Assignment5.main()` run 실행
 
 - **`Assignment5 실행 결과`**
+  ```
+    > Task :Assignment5.main()
+    count: 13 {"id":10,"quote":"Really loving Spring Boot, makes stand alone Spring apps easy."}
+    count: 12 {"id":11,"quote":"I have two hours today to build an app from scratch. @springboot to the rescue!"}
+    count: 11 {"id":4,"quote":"Previous to Spring Boot … and many hours of frustration."}
+    count: 9 {"id":12,"quote":"@springboot with @ springframework is pure productivity! … # newFavLib"}
+    count: 9 {"id":3,"quote":"Spring has come quite a ways in addressing … I built an application using it."}
+    count: 9 {"id":7,"quote":"The real benefit of Boot, however …, I know it's a safe bet."}
+    count: 8 {"id":8,"quote":"I don't worry about my code scaling … keeping the conventions that just work."}
+    count: 8 {"id":9,"quote":"So easy it is to switch container in #springboot."}
+    count: 7 {"id":1,"quote":"Working with Spring Boot is like pair programming with the Spring developers."}
+    count: 5 {"id":5,"quote":"Spring Boot solves this problem … just to figure out how it's all pieced together."}
+    count: 5 {"id":2,"quote":"With Boot you deploy everywhere you can find a JVM basically."}
+    count: 4 {"id":6,"quote":"It embraces convention over configuration … such as Ruby on Rails."}
+    Total count: 100
+  ```
+ ### Assignment7
+  괄호가 알맞게 짝지어진 가장 긴 부분의 길이를 구하시오. ‘(‘와 ‘)’로만 이루어진 문자열에서, 괄호
+  가 알맞게 짝지어진 가장 긴 부분의 길이를 구한다. “(()”의 경우 가장 긴 유효한 부분은 “()” 이므로
+  길이는 2 이다. “)()())”의 경우는, 가장 긴 유효한 부분은 “()()” 이므로 길이는 4 이다.
+
+- **`Assignment7 테스트 방법`**
+-   - src/main/java/brique/brique_test/assignment5/Assignment5.java 경로의 `Assignment5.main()` run 실행
+
+- **`Assignment7 실행 결과`**
+
+  
