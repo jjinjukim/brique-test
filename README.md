@@ -48,6 +48,7 @@ csv 파일을 읽어서 오류가 있는 항목들을 걸러내고, 필요한 �
 
 ### Assignment2
 클라이언트 프로그램이 서버 프로그램에 Ping 을 보내면 Pong 을 응답받는 프로그램 작성
+
 - 제약 조건
   - TCP, UDP 중 택일
   - 클라이언트에서 보낸 메시지가 Ping 일 경우에 Pong 응답을 한다.
@@ -86,3 +87,40 @@ csv 파일을 읽어서 오류가 있는 항목들을 걸러내고, 필요한 �
   Send(3): foobar
   Received(3): foobar 
   ```
+
+### Assignment3
+다음 조건에 맞는 결과를 출력
+
+- 제약조건
+  - 출력 열은 총 8개이다.
+    - 종업원 번호 (emp_no)
+    - 이름 (first_name)
+    - 성 (last_name)
+    - 성별 (gender)
+    - 고용일자 (hire_date)
+    - 부서 이름 (dept_name)
+    - 직급 (title)
+    - 최대 급여 (max_salary)
+  - 2000년 이후 고용된 종업원들을 대상으로 한다
+  - 최대 급여는 각 종업원들이 받았던 급여 중 가장 높은 값을 의미한다.
+  - 문제풀이의 결과는 SQL query 만이 아닌 프로그램이다.
+
+- **`Assignment3 테스트 방법`**
+
+-  **`Assignment3 실행 결과`**
+
+### Assignment4
+
+- 제약조건
+
+- **`Assignment4 테스트 방법`**
+
+- **`Assignment4 실행 결과`**
+
+### Assignment5
+
+- 제약조건
+
+- **`Assignment5 테스트 방법`**
+
+- **`Assignment5 실행 결과`**
