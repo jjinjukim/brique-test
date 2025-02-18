@@ -58,8 +58,31 @@ csv 파일을 읽어서 오류가 있는 항목들을 걸러내고, 필요한 �
   - server는 client로부터 요청을 받은 후, 3초간 기다렸다가 응답을 보낸다.
 
 - **`Assignment2 테스트 방법`**
-  - `TCPServer` 실행 (Client 실행 이전 선행 필요)
+  - `TCPServer` 실행 (`*Client` 실행 이전 선행 필요)
   - `TCPSyncClien` 혹은 `TCPAsyncClient` 실행
-    - `TCPAsyncClient₩ 는 비동기 
+    - `TCPAsyncClient` 는 비동기 
     - `TCPSyncClient` 는 동기
+  
 - **`Assignment2 실행 결과`**
+  -`TCPServer`
+  ```
+  > Task :TCPServer.main()
+  TCP Server is running on port 56789
+  Connected by ('127.0.0.1', 56768)
+  Received(1): Ping
+  Received(2): Ping
+  Send: Pong (1)
+  Send: Pong (2)
+  Received(3): foobar
+  Send: foobar (3)
+  ``` 
+  - `TCPSyncClient`
+  ```
+  > Task :TCPSyncClient.main()
+  Send(1): Ping
+  Received(1): Pong
+  Send(2): Ping
+  Received(2): Pong
+  Send(3): foobar
+  Received(3): foobar 
+  ```
