@@ -59,8 +59,8 @@ csv 파일을 읽어서 오류가 있는 항목들을 걸러내고, 필요한 �
   - server는 client로부터 요청을 받은 후, 3초간 기다렸다가 응답을 보낸다.
 
 - **`Assignment2 테스트 방법`**
-  - `TCPServer` 실행 (`*Client` 실행 이전 선행 필요)
-  - `TCPSyncClien` 혹은 `TCPAsyncClient` 실행
+  - src/main/java/brique/brique_test/assignment2/TCPServer.java 경로의 `TCPServer.main()` 실행 (`*Client` 실행 이전 선행 필요)
+  - src/main/java/brique/brique_test/assignment2/* 경로의 `TCPSyncClient.main()` 혹은 `TCPAsyncClient.main()` 실행
     - `TCPAsyncClient` 는 비동기 
     - `TCPSyncClient` 는 동기
   
