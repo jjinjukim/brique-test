@@ -19,7 +19,7 @@ import java.net.Socket;
 public class TCPSyncClient {
 
     public static final String SERVER_ADDRESS = "localhost";
-    public static final int SERVER_PORT = 5678;
+    public static final int SERVER_PORT = 56789;
     public static final int CLIENT_PORT = 56768; // 하나의 포트 사용 (필요 시 자동 할당도 가능)
 
     public static void main(String[] args) {
