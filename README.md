@@ -60,10 +60,12 @@ csv 파일을 읽어서 오류가 있는 항목들을 걸러내고, 필요한 �
 
 - **`Assignment2 테스트 방법`**
   - src/main/java/brique/brique_test/assignment2/TCPServer.java 경로의 `TCPServer.main()` 실행 (`*Client` 실행 이전 선행 필요)
+    ![Assignment2](https://github.com/user-attachments/assets/2250a708-24eb-4fd8-a5bf-006e2df538de)
   - src/main/java/brique/brique_test/assignment2/* 경로의 `TCPSyncClient.main()` 혹은 `TCPAsyncClient.main()` 실행
     - `TCPAsyncClient` 는 비동기 
     - `TCPSyncClient` 는 동기
-  
+    ![Assignment2](https://github.com/user-attachments/assets/93457583-0b7e-4c5b-97b8-ae9949bc031b)
+
 - **`Assignment2 실행 결과`**
   - `TCPServer`
   ```
@@ -186,7 +188,14 @@ csv 파일을 읽어서 오류가 있는 항목들을 걸러내고, 필요한 �
   길이는 2 이다. “)()())”의 경우는, 가장 긴 유효한 부분은 “()()” 이므로 길이는 4 이다.
 
 - **`Assignment7 테스트 방법`**
--   - src/main/java/brique/brique_test/assignment5/Assignment5.java 경로의 `Assignment5.main()` run 실행
+  - src/main/java/brique/brique_test/assignment5/Assignment5.java 경로의 `Assignment5.main()` 의
+    ```
+    String s1 = "(()()()()()))";
+    String s2 = ")()())";
+    ```
+    안에 원하는 입력값을 넣어주세요.
+  - src/main/java/brique/brique_test/assignment5/Assignment5.java 경로의 `Assignment5.main()` run 실행
+  ![Assignment7](https://github.com/user-attachments/assets/6410cf9e-684b-4033-b445-f53da5ee8f6a)
 
 - **`Assignment7 실행 결과`**
   ```
