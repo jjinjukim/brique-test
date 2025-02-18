@@ -64,7 +64,7 @@ csv 파일을 읽어서 오류가 있는 항목들을 걸러내고, 필요한 �
     - `TCPSyncClient` 는 동기
   
 - **`Assignment2 실행 결과`**
-  -`TCPServer`
+  - `TCPServer`
   ```
   > Task :TCPServer.main()
   TCP Server is running on port 56789
