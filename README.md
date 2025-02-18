@@ -1,10 +1,10 @@
 # brique-test
 
 ## 개발환경
-SpringBoot-3.4.2
-Java-21.0.6
-Mybatis-3.0.4
-MariaDB-3.4.1
+- SpringBoot-3.4.2
+- Java-21.0.6
+- Mybatis-3.0.4
+- MariaDB-3.4.1
 
 ## 문제 확인 가이드
 - 원하는 위치에 프로젝트를 다운받아 IDE로 실행시켜줍니다.(InteliJ 권장)
@@ -25,7 +25,7 @@ csv 파일을 읽어서 오류가 있는 항목들을 걸러내고, 필요한 �
     - 표준편차
     - 중간값
 
-- **`Assignment1 실행`**
+- **`Assignment1 테스트 방법`**
   - `Assignment1Main` 실행
 - **`Assignment1 실행 결과`**
   ``` ...
@@ -48,3 +48,18 @@ csv 파일을 읽어서 오류가 있는 항목들을 걸러내고, 필요한 �
 
 ### Assignment2
 클라이언트 프로그램이 서버 프로그램에 Ping 을 보내면 Pong 을 응답받는 프로그램 작성
+- 제약 조건
+  - TCP, UDP 중 택일
+  - 클라이언트에서 보낸 메시지가 Ping 일 경우에 Pong 응답을 한다.
+  - 클라이언트에서 보낸 메시지가 Ping 이 아니면 클라이언트에서 보낸 메시지를 그대로 응답을 한다.
+- 가산점
+  - 비동기 요청/응답을 수행하도록 프로그램을 작성.
+  - client는 요청을 보낸 후 server의 응답을 기다리지 않고 바로 다음 요청을 보낼 수 있다.
+  - server는 client로부터 요청을 받은 후, 3초간 기다렸다가 응답을 보낸다.
+
+- **`Assignment2 테스트 방법`**
+  - `TCPServer` 실행 (Client 실행 이전 선행 필요)
+  - `TCPSyncClien` 혹은 `TCPAsyncClient` 실행
+    - `TCPAsyncClient₩ 는 비동기 
+    - `TCPSyncClient` 는 동기
+- **`Assignment2 실행 결과`**
