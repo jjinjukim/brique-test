@@ -18,7 +18,7 @@ import java.net.Socket;
  * @version 1.0
  */
 public class TCPServer {
-    public static final int PORT = 5678;
+    public static final int PORT = 56789;
 
     public static void main(String[] args) {
         try (ServerSocket serverSocket = new ServerSocket(PORT)) { // ServerSocket을 사용하여 클라이언트의 연결 요청을 받고, 연결이 성립되면 Socket 객체를 통해 통신합니다.
