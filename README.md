@@ -26,7 +26,7 @@ csv 파일을 읽어서 오류가 있는 항목들을 걸러내고, 필요한 �
     - 중간값
 
 - **`Assignment1 테스트 방법`**
-  - src/main/java/brique/brique_test/assignment1/Assignment1java `Assignment1.main()` run 실행
+  - src/main/java/brique/brique_test/assignment1/Assignment1.java `Assignment1.main()` run 실행
 - **`Assignment1 실행 결과`**
   ``` ...
   3.0 84.0 334.0 33.4 27.35031992500270 22.5
