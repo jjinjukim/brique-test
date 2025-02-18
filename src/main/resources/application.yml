@@ -1,3 +1,8 @@
+server:
+    servlet:
+        context-path: /
+    port: 8082
+
 spring:
     application:
         name: brique-test
@@ -8,7 +13,7 @@ spring:
             charset: UTF-8
     mvc:
         view:
-            prefix: /WEB-INF/jsp/
+            prefix: /WEB-INF/views/
             suffix: .jsp
     # jdbc
     datasource:
@@ -16,13 +21,15 @@ spring:
         url: jdbc:mariadb://codingtest.brique.kr:3306/employees?characterEncoding=utf8&serverTimezone=UTC
         username: codingtest
         password: 12brique!@
+    jpa:
+        hibernate:
+            ddl-auto: none
+        show-sql: true
+        properties:
+            hibernate:
+                format_sql: true
 
-server:
-    servlet:
-        context-path: /
-    port: 8082
-
-mybatis:
-    mapper-locations: mapper/**/*.xml
-    configuration:
-        map-underscore-to-camel-case: true
+logging:
+    level:
+        org:
+            hibernate: info
