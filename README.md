@@ -26,7 +26,7 @@ csv 파일을 읽어서 오류가 있는 항목들을 걸러내고, 필요한 �
     - 중간값
 
 - **`Assignment1 테스트 방법`**
-  - `Assignment1Main` 실행
+  - `Assignment1Main.main()` run 실행
 - **`Assignment1 실행 결과`**
   ``` ...
   3.0 84.0 334.0 33.4 27.35031992500270 22.5
@@ -107,34 +107,32 @@ csv 파일을 읽어서 오류가 있는 항목들을 걸러내고, 필요한 �
 
 - **`Assignment3 테스트 방법`**
   1. Test Code
-     - src/main/java/brique/brique_test/EmployeeControllerTest.java 경로의 testEmployeeApiList() 실행
+     - src/main/java/brique/brique_test/EmployeeControllerTest.java 경로의 testEmployeeApiList() run 실행
      - info 로그 확인
   2. WEB
-     - src/main/java/brique/brique_test/BriqueTestApplication.java 경로의 main 실행
+     - src/main/java/brique/brique_test/BriqueTestApplication.java 경로의 BriqueTestApplication.main() run 실행
      - http://localhost:8082/employee/api/list 접속
-
+       ![/BriqueTestApplication.java](https://github.com/user-attachments/assets/fd98e7b5-c47a-4d50-a035-3e9470398361)
+       
 -  **`Assignment3 실행 결과`**
    ![employee](https://github.com/user-attachments/assets/89e03674-b8e1-4f3a-90ed-7e5dd62eced5)
-   ```
-    EmployeeController: Retrieved 15 employees
-    Employee: EmployeeProjection{empNo=47291, firstName='Ulf', lastName='Flexer', gender='M', hireDate=2000-01-12, deptName='Human Resources', title='Staff', maxSalary=52206}
-    Employee: EmployeeProjection{empNo=60134, firstName='Seshu', lastName='Rathonyi', gender='F', hireDate=2000-01-02, deptName='Customer Service', title='Staff', maxSalary=61320}
-    Employee: EmployeeProjection{empNo=60134, firstName='Seshu', lastName='Rathonyi', gender='F', hireDate=2000-01-02, deptName='Marketing', title='Staff', maxSalary=61320}
-    Employee: EmployeeProjection{empNo=72329, firstName='Randi', lastName='Luit', gender='F', hireDate=2000-01-02, deptName='Human Resources', title='Staff', maxSalary=44619}
-    Employee: EmployeeProjection{empNo=108201, firstName='Mariangiola', lastName='Boreale', gender='M', hireDate=2000-01-01, deptName='Production', title='Senior Engineer', maxSalary=62286}
-    Employee: EmployeeProjection{empNo=205048, firstName='Ennio', lastName='Alblas', gender='F', hireDate=2000-01-06, deptName='Finance', title='Senior Staff', maxSalary=80596}
-    Employee: EmployeeProjection{empNo=222965, firstName='Volkmar', lastName='Perko', gender='F', hireDate=2000-01-13, deptName='Human Resources', title='Senior Staff', maxSalary=52953}
-    Employee: EmployeeProjection{empNo=226633, firstName='Xuejun', lastName='Benzmuller', gender='F', hireDate=2000-01-04, deptName='Marketing', title='Staff', maxSalary=53036}
-    Employee: EmployeeProjection{empNo=226633, firstName='Xuejun', lastName='Benzmuller', gender='F', hireDate=2000-01-04, deptName='Sales', title='Staff', maxSalary=53036}
-    Employee: EmployeeProjection{empNo=227544, firstName='Shahab', lastName='Demeyer', gender='M', hireDate=2000-01-08, deptName='Human Resources', title='Senior Staff', maxSalary=43267}
-    Employee: EmployeeProjection{empNo=422990, firstName='Jaana', lastName='Verspoor', gender='F', hireDate=2000-01-11, deptName='Development', title='Engineer', maxSalary=40638}
-    Employee: EmployeeProjection{empNo=424445, firstName='Jeong', lastName='Boreale', gender='M', hireDate=2000-01-03, deptName='Development', title='Engineer', maxSalary=42176}
-    Employee: EmployeeProjection{empNo=428377, firstName='Yucai', lastName='Gerlach', gender='M', hireDate=2000-01-23, deptName='Production', title='Engineer', maxSalary=65075}
-    Employee: EmployeeProjection{empNo=463807, firstName='Bikash', lastName='Covnot', gender='M', hireDate=2000-01-28, deptName='Quality Management', title='Engineer', maxSalary=52793}
-    Employee: EmployeeProjection{empNo=499553, firstName='Hideyuki', lastName='Delgrande', gender='F', hireDate=2000-01-22, deptName='Development', title='Engineer', maxSalary=72320}
-  ```
-
-
+     ```
+        EmployeeController: Retrieved 15 employees
+        Employee: EmployeeProjection{empNo=47291, firstName='Ulf', lastName='Flexer', gender='M', hireDate=2000-01-12, deptName='Human Resources', title='Staff', maxSalary=52206}
+        Employee: EmployeeProjection{empNo=60134, firstName='Seshu', lastName='Rathonyi', gender='F', hireDate=2000-01-02, deptName='Customer Service', title='Staff', maxSalary=61320}
+        Employee: EmployeeProjection{empNo=60134, firstName='Seshu', lastName='Rathonyi', gender='F', hireDate=2000-01-02, deptName='Marketing', title='Staff', maxSalary=61320}
+        Employee: EmployeeProjection{empNo=72329, firstName='Randi', lastName='Luit', gender='F', hireDate=2000-01-02, deptName='Human Resources', title='Staff', maxSalary=44619}
+        Employee: EmployeeProjection{empNo=108201, firstName='Mariangiola', lastName='Boreale', gender='M', hireDate=2000-01-01, deptName='Production', title='Senior Engineer', maxSalary=62286}
+        Employee: EmployeeProjection{empNo=205048, firstName='Ennio', lastName='Alblas', gender='F', hireDate=2000-01-06, deptName='Finance', title='Senior Staff', maxSalary=80596}
+        Employee: EmployeeProjection{empNo=222965, firstName='Volkmar', lastName='Perko', gender='F', hireDate=2000-01-13, deptName='Human Resources', title='Senior Staff', maxSalary=52953}
+        Employee: EmployeeProjection{empNo=226633, firstName='Xuejun', lastName='Benzmuller', gender='F', hireDate=2000-01-04, deptName='Marketing', title='Staff', maxSalary=53036}
+        Employee: EmployeeProjection{empNo=226633, firstName='Xuejun', lastName='Benzmuller', gender='F', hireDate=2000-01-04, deptName='Sales', title='Staff', maxSalary=53036}
+        Employee: EmployeeProjection{empNo=227544, firstName='Shahab', lastName='Demeyer', gender='M', hireDate=2000-01-08, deptName='Human Resources', title='Senior Staff', maxSalary=43267}
+        Employee: EmployeeProjection{empNo=422990, firstName='Jaana', lastName='Verspoor', gender='F', hireDate=2000-01-11, deptName='Development', title='Engineer', maxSalary=40638}
+        Employee: EmployeeProjection{empNo=424445, firstName='Jeong', lastName='Boreale', gender='M', hireDate=2000-01-03, deptName='Development', title='Engineer', maxSalary=42176}
+        Employee: EmployeeProjection{empNo=428377, firstName='Yucai', lastName='Gerlach', gender='M', hireDate=2000-01-23, deptName='Production', title='Engineer', maxSalary=65075}
+        Employee: EmployeeProjection{empNo=463807, firstName='Bikash', lastName='Covnot', gender='M', hireDate=2000-01-28, deptName='Quality Management', title='Engineer', maxSalary=52793}
+    ```
 ### Assignment4
 기온과 습도를 입력 받을 수 있도록 입력 테이블을 만들고, 그 입력 값에 대해 선꺽은선 그래프를 구현
 
@@ -147,12 +145,20 @@ csv 파일을 읽어서 오류가 있는 항목들을 걸러내고, 필요한 �
   - 입력이 변경되면 자동으로 chart에 변경된 값이 반영 된다.
 
 - **`Assignment4 테스트 방법`**
-
+  - WEB
+     - src/main/java/brique/brique_test/BriqueTestApplication.java 경로의 BriqueTestApplication.main() run 실행
+     - http://localhost:8082/chart/api/graph 접속
+       ![/BriqueTestApplication.java](https://github.com/user-attachments/assets/fd98e7b5-c47a-4d50-a035-3e9470398361)
+       
 - **`Assignment4 실행 결과`**
+![chart](https://github.com/user-attachments/assets/93862ca3-da6c-43a2-8dca-2f63164bd6b6)
 
 ### Assignment5
+호출할 때마다 랜덤한 response 를 주는 서버가 있다. 이서버를 100번 호출하여 각각의 결과 값들이 몇 번 반복 되었는지 계산한다.
 
 - 제약조건
+  - 마지막에 각 횟수들의 총 합을 출력한다.
+  - 가장 많은 횟수가 나온 값부터 출력한다
 
 - **`Assignment5 테스트 방법`**
 
